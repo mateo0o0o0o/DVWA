@@ -7,7 +7,8 @@ if( isset( $_POST[ 'Submit' ]  ) ) {
 	// Determine OS and execute the ping command.
 	if( stristr( php_uname( 's' ), 'Windows NT' ) ) {
 		// Windows
-		$cmd = shell_exec( 'ping  ' . $target );
+		
+		$cmd = shell_exec( 'pingg  ' . $target );
 	}
 	else {
 		// *nix
